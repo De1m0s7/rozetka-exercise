@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* @import "icons"; */
+/* @import "forms"; */
+.title {
+  font-size: 71px;
+  text-align: center;
+  line-height: 100%;
+  max-width: 1055px;
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 25px;
+  line-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main__wrapper {
+  padding: 110px 0 0 0;
+}
+
+.watch__logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 75px;
+}
+.watch__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.watch__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.functions__title {
+  margin-bottom: 150px;
+}
+.functions__img {
+  background-color: #f7f7f7;
+}
+.functions__img img {
+  height: 100%;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.water-protection {
+  padding: 180px 0 0 0;
+}
+.water-protection__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.water-protection__title {
+  margin-bottom: 40px;
+}
+.water-protection__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.watch-description {
+  padding: 120px 0 0 0;
+}
+.watch-description__img {
+  display: flex;
+  justify-content: center;
+}
+.watch-description__img img {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.characteristics {
+  padding: 140px 10px 150px 10px;
+}
+.characteristics__title {
+  margin-bottom: 100px;
+}
+.characteristics__items {
+  max-width: 770px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 50px 90px;
+  align-items: center;
+}
+.characteristics__description {
+  max-width: 350px;
+}
+.characteristics__text {
+  position: relative;
+  padding-bottom: 45px;
+}
+.characteristics__text::after {
+  content: "";
+  display: block;
+  width: 144px;
+  height: 2px;
+  background-color: #131313;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.characteristics__text--line {
+  padding-bottom: 0;
+}
+.characteristics__text--line::after {
+  display: none;
+}
+
+.watch-included__img {
+  display: flex;
+  justify-content: center;
+}
+.watch-included__img img {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .watch__logo {
+    margin-bottom: 60px;
+  }
+
+  .functions__title {
+    margin-bottom: 110px;
+  }
+
+  .water-protection {
+    padding: 80px 0 0 0;
+  }
+  .water-protection__title {
+    margin-bottom: 30px;
+  }
+
+  .watch-description {
+    padding: 80px 0 0 0;
+  }
+
+  .characteristics {
+    padding: 110px 10px 130px 10px;
+  }
+  .characteristics__title {
+    margin-bottom: 80px;
+  }
+  .characteristics__items {
+    gap: 30px 70px;
+  }
+  .characteristics__text {
+    padding-bottom: 40px;
+  }
+  .characteristics__text::after {
+    width: 95px;
+  }
+
+  .title {
+    font-size: 58px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    min-width: 320px;
+  }
+
+  .main__wrapper {
+    padding: 50px 0 0 0;
+  }
+
+  .watch__logo {
+    margin-bottom: 40px;
+  }
+  .watch__logo img {
+    max-width: 50%;
+  }
+
+  .functions__title {
+    margin-bottom: 50px;
+  }
+
+  .water-protection {
+    padding: 40px 0 0 0;
+  }
+  .water-protection__title {
+    margin-bottom: 20px;
+  }
+
+  .watch-description {
+    padding: 40px 0 0 0;
+  }
+
+  .characteristics {
+    padding: 40px 10px 60px 10px;
+  }
+  .characteristics__title {
+    margin-bottom: 20px;
+  }
+  .characteristics__items {
+    gap: 20px;
+  }
+  .characteristics__text {
+    padding-bottom: 20px;
+  }
+  .characteristics__text::after {
+    width: 45px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
